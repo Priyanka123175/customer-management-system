@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search & View | CMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+    <h1>🔍 Search & View Customers</h1>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <h2>Search Customer</h2>
+      <input type="number" id="searchId" placeholder="Enter Customer ID" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- View All Customers -->
+    <div class="list-section" id="listSection">
+      <h2>All Customers</h2>
+      <table id="custTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Navigation -->
+    <div class="control-section">
+      <a href="add-delete.html"><button class="view-btn">➕ Add / ❌ Delete</button></a>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="script-search-view.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add / Delete Customer | CMS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+    <h1>➕ Add / ❌ Delete Customer</h1>
+
+    <!-- Add Customer Section -->
+    <div class="form-section">
+      <h2>Add Customer</h2>
+      <input type="number" id="custId" placeholder="Customer ID" />
+      <input type="text" id="custName" placeholder="Name" />
+      <input type="text" id="custPhone" placeholder="Phone Number" />
+      <input type="email" id="custEmail" placeholder="Email Address" />
+      <button id="addBtn">Add Customer</button>
+    </div>
+
+    <!-- Delete Customer Section -->
+    <div class="form-section">
+      <h2>Delete Customer</h2>
+      <input type="number" id="deleteId" placeholder="Enter Customer ID" />
+      <button id="deleteBtn">Delete Customer</button>
+    </div>
+
+    <!-- Navigation -->
+    <div class="control-section">
+      <a href="search-view.html"><button class="view-btn">🔍 Search & View</button></a>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="script-add-delete.js"></script>
+</body>
+</html>
